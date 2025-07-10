@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="./output.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <main class="relative container 2xl:mx-auto min-h-screen bg-big-stone-50  mx-auto">
+      <div class=" border-b-2 border-big-stone-200 p-5">
+        <h1 class=" mb-1 text-3xl bg-gradient-to-r from-blue-900 to-red-500 bg-clip-text text-transparent font font-extrabold">Cybercrime Dashboard</h1>
+        <p class="font text-slate-400">Stay updated on the latest cyber threats and statistics in Myanmar</p>
+      </div>
+      <div class="p-10">
+        <div class="mb-5">
+          <h3 class="text-xl text-red-500 font font-bold ">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke-width="1.5" stroke="red" class="size-6 inline-flex">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z" />
+            </svg>
+            <span>Recent Cybercrime Reports</span>
+          </h3>
+          <p class="font text-sm text-slate-400">Stay informed about the latest cyber threats in Myanmar</p>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+          <div
+            class="flex flex-col relative bg-white border border-gray-200 shadow-md rounded-xl p-4 md:p-8 dark:bg-neutral-900 dark:border-neutral-700 dark:shadow-neutral-700/70"
+          >
+            <h3 class="mb-3 text-lg font-bold text-gray-800 dark:text-white">
+              KBZ Mobile Banking (Individual) Unauthorized Withdrawl
+            </h3>
+            <div class="mb-3">
+              <button type="button" class="py-0.5 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-full border border-gray-200 bg-white text-gray-700 shadow-2xs hover:bg-gray-50 focus:outline-hidden focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800 dark:focus:bg-neutral-800">
+                Banking Fraud
+              </button>
+              <button type="button" class="py-0.5 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-full border border-red-300 bg-white text-red-500 shadow-2xs hover:bg-gray-50 focus:outline-hidden focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-red-500 dark:border-red-500 dark:text-white dark:hover:bg-red-800 dark:focus:bg-red-500">
+                High
+              </button>
+              <button type="button" class="py-0.5 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-full border border-gray-200 bg-white text-gray-700 shadow-2xs hover:bg-gray-50 focus:outline-hidden focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800 dark:focus:bg-neutral-800">
+                2024-06-25
+              </button>
+            </div>
+            <p class="line-clamp-6 text-gray-500 dark:text-neutral-400">
+              A user reported that 189 lakhs was transferred from their KBZ Mobile Banking account to an unknown account (WAI ZAW KO KO, Acc No : 06930106902829001) without their authorization. The user was overseas and had only shared their SIM card with their spouse for reeiving OTP codes when needed. However,no OTP was received for this transaction. The user has contacted KBZ Bank's customer service and filled a police report, but was informed that the money has already been withdrawn from the recipient's account.
+            </p>
+            <a
+              class="mb-3 inline-flex items-center gap-x-1 text-sm font-semibold rounded-lg border border-transparent text-blue-600 decoration-2 hover:text-blue-700 hover:underline focus:underline focus:outline-hidden focus:text-blue-700 disabled:opacity-50 disabled:pointer-events-none dark:text-blue-500 dark:hover:text-blue-600 dark:focus:text-blue-600"
+              href="#"
+            >
+              Read more
+              <svg
+                class="shrink-0 size-4"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="m9 18 6-6-6-6"></path>
+              </svg>
+            </a>
+            <div class="inline-flex justify-between">
+                <button type="button" id="btn" class="py-2 px-4 text-big-stone-500 active:inline-flex items-center rounded-full gap-x-2 -ms-px first:ms-0  text-sm font-medium focus:z-10 border border-gray-200 bg-white shadow-2xs hover:bg-big-stone-100 hover:text-big-stone-700 focus:outline-hidden disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800 dark:focus:bg-neutral-800">
+                 Prevention Tips
+                </button>
+                <div id="para" class="hidden">
+                  <div
+                    class="items-left bg-big-stone-100 duration-600 absolute left-8 -top-56 rounded-xl shadow-lg flex h-60 max-w-72 translate-y-[100%] flex-col justify-between p-5 text-black group-hover:translate-y-0 overflow-auto scrollbar-hide"
+                  >
+                    <div class="items-left flex flex-col justify-center items-start">
+                      <h1 class="text-md font-semibold mb-2 text-big-stone-700">Prevention Tips:</h1>
+                      <ul class="text-sm list-disc text-big-stone-500 px-5">
+                        <li>Never share your mobile banking credential with anyone.</li>
+                        <li>Enable biometric authentication if available.</li>
+                        <li>Regularly check your account for unauthorized transactions.</li>
+                        <li>Contact your bank immediately if you notice suspicious activity.</li>                              
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="relative">
+                  <div class="icons hidden">
+                    <div  class="inline-flex rounded-lg shadow-2xs absolute -top-10 -left-5">
+                        <button type="button" class="py-2 px-3 inline-flex justify-center items-center gap-2 -ms-px first:rounded-s-lg first:ms-0 last:rounded-e-lg text-sm font-medium focus:z-10 border border-gray-200 bg-white text-gray-800 shadow-2xs hover:bg-gray-50 focus:outline-hidden focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800 dark:focus:bg-neutral-800">
+                              <i class="fa-brands fa-facebook"></i>
+                          </button>
+                          <button type="button" class="py-2 px-3 inline-flex justify-center items-center gap-2 -ms-px first:rounded-s-lg first:ms-0 last:rounded-e-lg text-sm font-medium focus:z-10 border border-gray-200 bg-white text-gray-800 shadow-2xs hover:bg-gray-50 focus:outline-hidden focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800 dark:focus:bg-neutral-800">
+                            <i class="fa-brands fa-telegram"></i>
+                          </button>
+                          <button type="button" class="py-2 px-3 inline-flex justify-center items-center gap-2 -ms-px first:rounded-s-lg first:ms-0 last:rounded-e-lg text-sm font-medium focus:z-10 border border-gray-200 bg-white text-gray-800 shadow-2xs hover:bg-gray-50 focus:outline-hidden focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800 dark:focus:bg-neutral-800">
+                            <i class="fa-brands fa-x-twitter"></i>
+                          </button>
+                    </div>
+                  </div>                  
+                  <button type="button" id="btn1" class=" py-2 px-4 inline-flex items-center rounded-full gap-x-2 -ms-px  first:ms-0 text-sm font-medium focus:z-10 border border-gray-200 bg-white text-big-stone-500 shadow-2xs hover:bg-big-stone-100 hover:text-big-stone-700 focus:outline-hidden disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800 dark:focus:bg-neutral-800">
+                    <svg
+                      class="h-5 w-5"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="1.5"
+                        d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"
+                      ></path>
+                    </svg>
+                    Share                   
+                  </button>                
+                </div>
+            </div>            
+          </div>
+
+          <div
+            class="flex flex-col relative bg-white border border-gray-200 shadow-md rounded-xl p-4 md:p-8 dark:bg-neutral-900 dark:border-neutral-700 dark:shadow-neutral-700/70"
+          >
+            <h3 class="mb-3 text-lg font-bold text-gray-800 dark:text-white">
+              KBZ Mobile Banking (Individual) Unauthorized Withdrawl
+            </h3>
+            <div class="mb-3">
+              <button type="button" class="py-0.5 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-full border border-gray-200 bg-white text-gray-700 shadow-2xs hover:bg-gray-50 focus:outline-hidden focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800 dark:focus:bg-neutral-800">
+                Banking Fraud
+              </button>
+              <button type="button" class="py-0.5 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-full border border-red-300 bg-white text-red-500 shadow-2xs hover:bg-gray-50 focus:outline-hidden focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-red-500 dark:border-red-500 dark:text-white dark:hover:bg-red-800 dark:focus:bg-red-500">
+                High
+              </button>
+              <button type="button" class="py-0.5 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-full border border-gray-200 bg-white text-gray-700 shadow-2xs hover:bg-gray-50 focus:outline-hidden focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800 dark:focus:bg-neutral-800">
+                2024-06-25
+              </button>
+            </div>
+            <p class="line-clamp-6 text-gray-500 dark:text-neutral-400">
+              A user reported that 189 lakhs was transferred from their KBZ Mobile Banking account to an unknown account (WAI ZAW KO KO, Acc No : 06930106902829001) without their authorization. The user was overseas and had only shared their SIM card with their spouse for reeiving OTP codes when needed. However,no OTP was received for this transaction. The user has contacted KBZ Bank's customer service and filled a police report, but was informed that the money has already been withdrawn from the recipient's account.
+            </p>
+            <a
+              class="mb-3 inline-flex items-center gap-x-1 text-sm font-semibold rounded-lg border border-transparent text-blue-600 decoration-2 hover:text-blue-700 hover:underline focus:underline focus:outline-hidden focus:text-blue-700 disabled:opacity-50 disabled:pointer-events-none dark:text-blue-500 dark:hover:text-blue-600 dark:focus:text-blue-600"
+              href="#"
+            >
+              Read more
+              <svg
+                class="shrink-0 size-4"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="m9 18 6-6-6-6"></path>
+              </svg>
+            </a>
+            <div class="inline-flex justify-between">
+                <button type="button" id="btn" class="py-2 px-4 text-big-stone-500 active:inline-flex items-center rounded-full gap-x-2 -ms-px first:ms-0  text-sm font-medium focus:z-10 border border-gray-200 bg-white shadow-2xs hover:bg-big-stone-100 hover:text-big-stone-700 focus:outline-hidden disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800 dark:focus:bg-neutral-800">
+                 Prevention Tips
+                </button>
+                <div id="para" class="hidden">
+                  <div
+                    class="items-left bg-big-stone-100 duration-600 absolute left-8 -top-56 rounded-xl shadow-lg flex h-60 max-w-72 translate-y-[100%] flex-col justify-between p-5 text-black group-hover:translate-y-0 overflow-auto scrollbar-hide"
+                  >
+                    <div class="items-left flex flex-col justify-center items-start">
+                      <h1 class="text-md font-semibold mb-2 text-big-stone-700">Prevention Tips:</h1>
+                      <ul class="text-sm list-disc text-big-stone-500 px-5">
+                        <li>Never share your mobile banking credential with anyone.</li>
+                        <li>Enable biometric authentication if available.</li>
+                        <li>Regularly check your account for unauthorized transactions.</li>
+                        <li>Contact your bank immediately if you notice suspicious activity.</li>                              
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="relative">
+                  <div class="icons hidden">
+                    <div  class="inline-flex rounded-lg shadow-2xs absolute -top-10">
+                        <button type="button" class="py-2 px-3 inline-flex justify-center items-center gap-2 -ms-px first:rounded-s-lg first:ms-0 last:rounded-e-lg text-sm font-medium focus:z-10 border border-gray-200 bg-white text-gray-800 shadow-2xs hover:bg-gray-50 focus:outline-hidden focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800 dark:focus:bg-neutral-800">
+                              <i class="fa-brands fa-facebook"></i>
+                          </button>
+                          <button type="button" class="py-2 px-3 inline-flex justify-center items-center gap-2 -ms-px first:rounded-s-lg first:ms-0 last:rounded-e-lg text-sm font-medium focus:z-10 border border-gray-200 bg-white text-gray-800 shadow-2xs hover:bg-gray-50 focus:outline-hidden focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800 dark:focus:bg-neutral-800">
+                            <i class="fa-brands fa-telegram"></i>
+                          </button>
+                          <button type="button" class="py-2 px-3 inline-flex justify-center items-center gap-2 -ms-px first:rounded-s-lg first:ms-0 last:rounded-e-lg text-sm font-medium focus:z-10 border border-gray-200 bg-white text-gray-800 shadow-2xs hover:bg-gray-50 focus:outline-hidden focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800 dark:focus:bg-neutral-800">
+                            <i class="fa-brands fa-x-twitter"></i>
+                          </button>
+                    </div>
+                  </div>                  
+                  <button type="button" id="btn1" class=" py-2 px-4 inline-flex items-center rounded-full gap-x-2 -ms-px  first:ms-0 text-sm font-medium focus:z-10 border border-gray-200 bg-white text-big-stone-500 shadow-2xs hover:bg-big-stone-100 hover:text-big-stone-700 focus:outline-hidden disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800 dark:focus:bg-neutral-800">
+                    <svg
+                      class="h-5 w-5"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="1.5"
+                        d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"
+                      ></path>
+                    </svg>
+                    Share                   
+                  </button>                
+                </div>
+            </div>            
+          </div>
+        </div>
+    </main> 
+  </body>
+  <script src="./js/main.js"></script>
+</html>

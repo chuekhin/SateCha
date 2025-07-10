@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="./output.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <main
+      class="relative bg-color font flex size-full min-h-screen flex-col  group/design-root overflow-x-hidden" 
+    >
+      <div class=" flex h-full grow flex-col">
+        <div class="px-10 md:px-40 flex flex-1 justify-center py-5">
+          <div class="flex flex-col max-w-[960px] flex-1">
+            <div class="flex p-4 @container">
+              <div class="flex w-full flex-col gap-4 items-center">
+                <div class="flex gap-4 flex-col items-center">
+                  <div
+                    class="bg-center bg-[#f1f5f9] flex justify-center items-center aspect-square bg-cover rounded-full min-h-32 w-32"
+                  >
+                    <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="#45556c" viewBox="0 0 24 24" stroke-width="0.7" stroke="white" class="size-full">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                    </svg> -->
+                    <img
+                      class="size-24"
+                      src="../assets/avatar-people-profile-svgrepo-com.svg"
+                    />
+                  </div>
+                  <div class="flex flex-col items-center justify-center">
+                    <p
+                      class="text-white drop-shadow-xl/50 text-[22px] font-bold leading-tight tracking-[-0.015em] text-center"
+                    >
+                      Chue Khin
+                    </p>
+                    <p
+                      class="text-[#90adcb] text-base font-normal leading-normal text-center"
+                    ></p>
+                  </div>
+                </div>
+                <!-- <button
+                  class="flex min-w-[84px] cursor-pointer items-center justify-center gap-1 overflow-hidden rounded-lg h-10 px-4 bg-[#223649] text-white text-sm font-bold leading-normal tracking-[0.015em] w-full max-w-[480px] @[480px]:w-auto"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-4"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L6.832 19.82a4.5 4.5 0 0 1-1.897 1.13l-2.685.8.8-2.685a4.5 4.5 0 0 1 1.13-1.897L16.863 4.487Zm0 0L19.5 7.125"
+                    />
+                  </svg>
+                  <span class="truncate">Edit photo</span>
+                </button> -->
+                 <button
+                class="rounded-lg relative w-32 h-10 drop-shadow-xl/50 cursor-pointer flex items-center bg-big-stone-100  group hover:bg-big-stone-100 active:bg-big-stone-100 "
+              >
+                
+                <span
+                  class="text-big-stone-950 text-sm font-semibold ml-3 transform group-hover:translate-x-6 transition-all duration-300"
+                  >Edit Photo</span
+                >
+                <span
+                  class="absolute right-0 h-full w-8 rounded-lg bg-big-stone-100 flex items-center justify-center transform group-hover:translate-x-0 group-hover:w-full transition-all duration-300"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-4"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L6.832 19.82a4.5 4.5 0 0 1-1.897 1.13l-2.685.8.8-2.685a4.5 4.5 0 0 1 1.13-1.897L16.863 4.487Zm0 0L19.5 7.125"
+                    />
+                  </svg>
+                </span>
+              </button>
+              </div>
+            </div>
+            <div class="pb-3"></div>
+            <h2
+              class="text-white drop-shadow-xl/50  text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5"
+            >
+              Account Information
+            </h2>
+            <div class="p-4 grid grid-cols-[20%_1fr] gap-x-6">
+              <div
+                class="col-span-2 grid grid-cols-subgrid items-center border-t border-t-[#84b8e6]  py-5"
+              >
+                <img
+                  class="size-6 bg-white border-2 border-black"
+                  src="../assets/people-svgrepo-com.svg"
+                />
+                <div>
+                  <p class="text-white text-md font-bold leading-normal">
+                    Name
+                  </p>
+                  <span
+                    class="text-link-water text-sm font-normal leading-normal"
+                    >Chue Khin</span
+                  >
+                </div>
+              </div>
+              <div
+                class="col-span-2 grid grid-cols-subgrid items-center border-t border-t-[#84b8e6] py-5"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="white"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-7"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"
+                  />
+                </svg>
+
+                <div>
+                  <p class="text-white text-md font-bold leading-normal">
+                    Email
+                  </p>
+                  <span
+                    class="text-link-water text-sm font-normal leading-normal"
+                    >chuekhin@gmail.com</span
+                  >
+                </div>
+              </div>
+              <div
+                class="col-span-2 grid grid-cols-subgrid items-center border-t border-t-[#84b8e6] py-5"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="white"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z"
+                  />
+                </svg>
+
+                <div>
+                  <p class="text-white text-md font-bold leading-normal">
+                    Phone
+                  </p>
+                  <span
+                    class="text-link-water text-sm font-normal leading-normal"
+                    >+959123456789</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="flex px-4 py-3 justify-end">
+              <button
+                class="rounded-lg relative w-32 h-10 drop-shadow-xl/50 cursor-pointer flex items-center bg-big-stone-100  group hover:bg-big-stone-100 active:bg-big-stone-100 "
+              >
+                
+                <span
+                  class="text-big-stone-950 font-semibold text-sm ml-5 transform group-hover:translate-x-6 transition-all duration-300"
+                  >Log Out</span
+                >
+                <span
+                  class="absolute right-0 h-full w-10 rounded-lg bg-big-stone-100 flex items-center justify-center transform group-hover:translate-x-0 group-hover:w-full transition-all duration-300"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 9V5.25A2.25 2.25 0 0 1 10.5 3h6a2.25 2.25 0 0 1 2.25 2.25v13.5A2.25 2.25 0 0 1 16.5 21h-6a2.25 2.25 0 0 1-2.25-2.25V15m-3 0-3-3m0 0 3-3m-3 3H15" />
+                  </svg>
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
