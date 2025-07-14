@@ -1,13 +1,12 @@
 @import "tailwindcss";
 
 @utility bg-color{
-    background-image: linear-gradient(306deg, rgba(54, 54, 54, 0.05) 0%, rgba(54, 54, 54, 0.05) 33.333%,rgba(85, 85, 85, 0.05) 33.333%, rgba(85, 85, 85, 0.05) 66.666%,rgba(255, 255, 255, 0.05) 66.666%, rgba(255, 255, 255, 0.05) 99.999%),linear-gradient(353deg, rgba(81, 81, 81, 0.05) 0%, rgba(81, 81, 81, 0.05) 33.333%,rgba(238, 238, 238, 0.05) 33.333%, rgba(238, 238, 238, 0.05) 66.666%,rgba(32, 32, 32, 0.05) 66.666%, rgba(32, 32, 32, 0.05) 99.999%),linear-gradient(140deg, rgba(192, 192, 192, 0.05) 0%, rgba(192, 192, 192, 0.05) 33.333%,rgba(109, 109, 109, 0.05) 33.333%, rgba(109, 109, 109, 0.05) 66.666%,rgba(30, 30, 30, 0.05) 66.666%, rgba(30, 30, 30, 0.05) 99.999%),linear-gradient(189deg, rgba(77, 77, 77, 0.05) 0%, rgba(77, 77, 77, 0.05) 33.333%,rgb(45,74,119) 33.333%, rgb(45,74,119) 66.666%,rgb(45,74,119) 66.666%, rgb(45,74,119) 99.999%),linear-gradient(90deg, rgb(45,74,119),rgb(45,74,119));
+    background-image: linear-gradient(45deg, rgba(23, 23, 23, 0.04) 0%, rgba(23, 23, 23, 0.04) 32%,rgba(171, 171, 171, 0.04) 32%, rgba(171, 171, 171, 0.04) 100%),linear-gradient(0deg, rgba(173, 173, 173, 0.04) 0%, rgba(173, 173, 173, 0.04) 40%,rgba(55, 55, 55, 0.04) 40%, rgba(55, 55, 55, 0.04) 100%),linear-gradient(157.5deg, rgba(44, 44, 44, 0.04) 0%, rgba(44, 44, 44, 0.04) 52%,rgba(195, 195, 195, 0.04) 52%, rgba(195, 195, 195, 0.04) 100%),linear-gradient(157.5deg, rgba(203, 203, 203, 0.04) 0%, rgba(203, 203, 203, 0.04) 11%,rgba(89, 89, 89, 0.04) 11%, rgba(89, 89, 89, 0.04) 100%),linear-gradient(90deg, rgb(4,153,195),rgb(173,189,211));
 }
 
 @utility font{
         font-family: "Orbitron",sans-serif;
 }
-
 
 .scrollbar-hide {
   scrollbar-width: none; 
@@ -15,6 +14,90 @@
 }
 .scrollbar-hide::-webkit-scrollbar {
   display: none; 
+}
+
+
+.highlight {
+  animation: highlightWord 5s forwards;
+} 
+
+.slideL
+{
+    visibility: visible;
+    animation-name: slideleft ease-out forwards;
+    -webkit-animation-name: slideleft;
+    animation-duration: 3s;
+    -webkit-animation-duration: 3s;
+}
+
+.slideR
+{
+    visibility: visible;
+    animation-name: slideright ease-out forwards;
+    -webkit-animation-name: slideright;
+    animation-duration: 3s;
+    -webkit-animation-duration: 3s;
+}
+
+.slideD
+{
+    visibility: visible;
+    animation-name: slidedown;
+    -webkit-animation-name: slidedown;
+    animation-duration: 2s;
+    -webkit-animation-duration: 2s;
+}
+
+@keyframes highlightWord {
+  from {
+    opacity: 0;
+    color: black;
+  }
+  to {
+    opacity: 1;
+    color: #00f6ff;
+    text-shadow: 0 0 10px #2e2e4d;
+  }
+}
+
+@keyframes slideleft 
+{
+  0%{
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100%
+     {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  
+}
+
+@keyframes slideright 
+{
+  0%{
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100%
+     {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+ @keyframes slidedown
+{
+    0%{
+        opacity: 0;
+        transform: translateY(-70%);
+    }
+    100%
+    {
+        opacity: 1;
+        transform: translateY(0%);
+    }
 }
 
 
@@ -34,5 +117,6 @@
     --color-big-stone-950: #1b263b;
 
     --color-link-water: #dbe6f3;
+    --inset-shadow-md: inset -1px -1px 2px 2px rgba(0, 0, 0, 0.25); 
 
 }

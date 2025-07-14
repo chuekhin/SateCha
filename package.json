@@ -8,10 +8,11 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev" : "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch"
+    "dev": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch"
   },
   "dependencies": {
     "@tailwindcss/cli": "^4.1.11",
+    "animate.css": "^4.1.1",
     "tailwindcss": "^4.1.11"
   }
 }

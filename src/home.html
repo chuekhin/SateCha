@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="./output.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="m-0 font bg-gradient-to-r from-blue-200 via-sky-300 to-blue-200">
+    <!-- Navbar -->
+    <nav
+      class="flex items-center justify-between sticky top-0 z-50 bg-gradient-to-r from-[#0f2b4d] to-[#00d4ff] shadow-xl shadow-black/30 py-5 px-7"
+    >
+      <div class="container mx-auto">
+        <a href="./home.html" class="flex items-center space-x-2">
+          <img
+            src="../assets/img/logo.png"
+            alt="logo"
+            class="w-8 rounded-b-full shadow-md shadow-white/70 hover:scale-125"
+          />
+          <span class="text-white text-xl font-bold">SateCha</span>
+        </a>
+        <button
+          class="navbar-toggler block lg:invisible"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+
+    
+        <div class="flex items-center space-x-6">
+          <div class="hidden md:block">
+            <div class="flex space-x-6">
+              <div class="group nav-item">
+                <a
+                  href="./index.html"
+                  class="inline-flex items-center gap-1 text-white hover:text-shadow-lg hover:text-shadow-white/50"
+                  >Dashboard
+                  <i
+                    class="fa-solid fa-clipboard opacity-0 group-hover:opacity-100 transition"
+                  ></i
+                ></a>
+              </div>
+              <div class="group nav-item">
+                <a
+                  href="./quiz.html"
+                  class="inline-flex items-center gap-1 text-white hover:text-shadow-lg hover:text-shadow-white/50"
+                  >Quiz
+                  <i
+                    class="fa-regular fa-lightbulb opacity-0 group-hover:opacity-100 transition"
+                  ></i
+                ></a>
+              </div>
+              <div class="group nav-item">
+                <a
+                  href="./tools.html"
+                  class="inline-flex items-center gap-1 text-white hover:text-shadow-lg hover:text-shadow-white/50"
+                  >Tools
+                  <i
+                    class="fa-solid fa-wrench opacity-0 group-hover:opacity-100 transition"
+                  ></i
+                ></a>
+              </div>
+              <div class="group nav-item">
+                <a
+                  href=""
+                  id="settings-toggle"
+                  class="inline-flex items-center gap-1 text-white hover:text-shadow-lg hover:text-shadow-white/50"
+                  >Settings
+                  <i
+                    class="fa-solid fa-gear opacity-0 group-hover:opacity-100 transition"
+                  ></i
+                ></a>
+                <ul
+                  id="settings-dropdown"
+                  class="absolute right-0 mt-2 w-48 bg-[#2D3A4F] rounded-md shadow-lg hidden z-50"
+                >
+                  <li>
+                    <button
+                      class="w-full text-left px-4 py-2 text-white hover:bg-[#1B263B] transition"
+                    >
+                      light/dark
+                    </button>
+                  </li>
+                  <li class="relative group text-white">
+                    <button
+                      class="w-full text-left px-4 py-2 hover:bg-[#1B263B] transition flex items-center justify-between"
+                    >
+                      <span>Language</span>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="w-4 h-4 ml-2"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M6 9l6 6 6-6"
+                        />
+                      </svg>
+                    </button>
+                    <ul
+                      class="absolute left-0 mt-1 w-full bg-[#2D3A4F] rounded-md shadow-lg hidden group-hover:block z-10"
+                    >
+                      <li>
+                        <button
+                          class="w-full text-left px-4 py-2 hover:bg-[#1B263B] transition"
+                        >
+                          မြန်မာ
+                        </button>
+                      </li>
+                      <li>
+                        <button
+                          class="w-full text-left px-4 py-2 hover:bg-[#1B263B] transition"
+                        >
+                          English
+                        </button>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <button
+                      class="w-full text-left px-4 py-2 text-white hover:bg-[#1B263B] transition"
+                    >
+                      Privacy & Policy
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </div>
+    
+        <div class="block md:hidden " id="bar">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="size-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>           
+        </div>
+
+        <div class="size-9 flex items-center justify-center border-2 border-white rounded-full hover:shadow-lg hover:shadow-white hover:scale-110"
+>
+          <a href="./profile.html" class="">
+          
+            <i class="fa-solid fa-user text-white text-xl transition"></i>
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Home -->
+    <section id="home" class="py-24 px-4 text-center text-[#324364]">
+      <div class="space-y-2">
+        <h1
+          id="welcome"
+          class="text-5xl font-bold text-shadow-lg text-shadow-black/30 space-x-2"
+        >
+          <span class="text-[#00f6ff] opacity-0 transition inline-block"
+            >Welcome</span
+          >
+          <span class="text-[#00f6ff] opacity-0 transition inline-block"
+            >to</span
+          >
+          <span class="text-[#00f6ff] opacity-0 transition inline-block"
+            >Satecha</span
+          >
+        </h1>
+        <p
+          class="slideobject3 invisible text-white text-lg font-light text-shadow-lg text-shadow-white/50"
+        >
+          Securing your privacy
+        </p>
+      </div>
+    </section>
+
+    <!-- Vision & Mission -->
+    <section
+      class="flex flex-col items-center gap-10 py-16 px-6 font-audiowide"
+    >
+      <div
+        class="slideobject1 invisible bg-[#2e2e4d] rounded-lg max-w-3xl text-center p-6 shadow-lg hover:-translate-y-2 transition hover:shadow-cyan-500/50"
+      >
+        <i class="fas fa-eye text-4xl text-[#00f6ff] mb-4"></i>
+        <h2 class="text-2xl text-[#00f6ff] mb-2">Our Vision</h2>
+        <p class="text-gray-300">
+          To empower individuals and organizations with the knowledge and skills
+          to protect themselves from cyber threats
+        </p>
+      </div>
+      <div
+        class="slideobject2 invisible bg-[#2e2e4d] rounded-lg max-w-3xl text-center p-6 shadow-lg hover:-translate-y-2 transition hover:shadow-cyan-500/50"
+      >
+        <i class="fas fa-bullseye text-4xl text-[#00f6ff] mb-4"></i>
+        <h2 class="text-2xl text-[#00f6ff] mb-2">Our Mission</h2>
+        <p class="text-gray-300">
+          To educate individuals and organizations about the risks associated
+          with cyber threats and empower them to protect their data
+        </p>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="py-20 px-4 text-center">
+      <h2
+        class="text-3xl text-[#00d4ff] mb-20 text-shadow-lg text-shadow-black/50"
+      >
+        Explore Our Features
+      </h2>
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto"
+      >
+        <div
+          class="flex flex-col bg-[#0f172a] p-6 rounded-lg border border-dashed border-cyan-400 inset-shadow-md inset-shadow-cyan-500/30 -rotate-2 duration-200 hover:rotate-0 hover:scale-105 hover:inset-shadow-none shadow-md relative before:absolute before:content-[''] before:w-16 before:h-5 before:bg-white before:opacity-30 before:-rotate-12 before:-top-2 before:left-5 after:absolute after:content-[''] after:w-16 after:h-5 after:bg-white after:opacity-30 after:rotate-12 after:-top-2 after:right-5"
+        >
+          <i class="fas fa-chart-line text-2xl text-white mb-4"></i>
+          <h3 class="text-xl text-[#00d4ff] mb-2">Dashboard</h3>
+          <p class="text-sm text-gray-200 mb-4">
+            Browse real cybercrime incidents and scams pinned for learning and
+            awareness.
+          </p>
+          <a
+            href="dashboard.html"
+            class="mt-auto mx-auto bg-[#00d4ff] text-[#0f172a] px-4 py-2 rounded font-bold"
+            >Go to Dashboard</a
+          >
+        </div>
+
+        <div
+          class="flex flex-col bg-[#0f172a] p-6 rounded-lg border border-dashed border-cyan-400 inset-shadow-md inset-shadow-cyan-500/30 transform -rotate-2 duration-200 hover:rotate-0 hover:scale-105 hover:inset-shadow-none transition shadow-md relative before:absolute before:content-[''] before:w-16 before:h-5 before:bg-white before:opacity-30 before:-rotate-12 before:-top-2 before:left-5 after:absolute after:content-[''] after:w-16 after:h-5 after:bg-white after:opacity-30 after:rotate-12 after:-top-2 after:right-5"
+        >
+          <i class="fas fa-shield-alt text-2xl text-white mb-4"></i>
+          <h3 class="text-xl text-[#00d4ff] mb-2">Cyber Quiz</h3>
+          <p class="text-sm text-gray-200 mb-4">
+            Take an interactive quiz to test how cyber-aware you really are!
+          </p>
+          <a
+            href="quiz.html"
+            class="mt-auto mx-auto bg-[#00d4ff] text-[#0f172a] px-4 py-2 rounded font-bold"
+            >Try the Quiz</a
+          >
+        </div>
+
+        <div
+          class="flex flex-col bg-[#0f172a] p-6 rounded-lg border border-dashed border-cyan-400 inset-shadow-md inset-shadow-cyan-500/30 transform -rotate-2 duration-200 hover:rotate-0 hover:scale-105 hover:inset-shadow-none transition shadow-md relative before:absolute before:content-[''] before:w-16 before:h-5 before:bg-white before:opacity-30 before:-rotate-12 before:-top-2 before:left-5 after:absolute after:content-[''] after:w-16 after:h-5 after:bg-white after:opacity-30 after:rotate-12 after:-top-2 after:right-5"
+        >
+          <i class="fas fa-robot text-2xl text-white mb-4"></i>
+          <h3 class="text-xl text-[#00d4ff] mb-2">Mg Cyber (Chatbot)</h3>
+          <p class="text-sm text-gray-200 mb-4">
+            Chat with Mg Cyber, your friendly AI assistant for cybersecurity
+            knowledge.
+          </p>
+          <a
+            href="#"
+            class="mt-auto mx-auto bg-[#00d4ff] text-[#0f172a] px-4 py-2 rounded font-bold"
+            >Talk to Mg Cyber</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <div id="footer" class="text-center mt-10 py-6">
+      <a href="#home" class="text-xl text-[#00d4ff] block mb-2">
+        <i class="fas fa-angle-up"></i>
+      </a>
+      <p class="text-gray-800 dark:text-gray-300">
+        Developed by
+        <a
+          href="./members.html"
+          class="relative group text-[#0077cc] hover:underline"
+        >
+          <span>NexTech Five</span>
+          <span
+            class="absolute w-max transform -translate-x-[95%] bottom-full mb-2 px-1 py-1 text-xs bg-white text-black rounded shadow-lg opacity-0 group-hover:opacity-100 transition"
+            >Meet our team</span
+          >
+        </a>
+      </p>
+    </div>
+
+    <!-- Mg Cyber Icon -->
+    <div class="fixed bottom-8 right-6 z-50">
+      <div
+        class="relative cursor-pointer group hover:border-4 hover:border-dotted hover:border-cyan-400 hover:rounded-full hover:bg-[#0f2b4d] hover:shadow-2xl hover:shadow-cyan-500 transition"
+      >
+        <img
+          src="../assets/img/Robot.png"
+          alt="robot"
+          class="w-24 rounded-full"
+        />
+        <span
+          class="absolute w-max left-1/2 transform -translate-x-1/2 bottom-full mb-5 py-1 text-xs bg-white text-black opacity-0 shadow-md group-hover:opacity-100 transition"
+          >Talk to Mg Cyber</span
+        >
+      </div>
+    </div>
+  </body>
+  <script src="../vendors/bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="../vendors/jquery/jquery-3.7.1.min.js"></script>
+  <script src="./js/animate.js"></script>
+  <script src="./js/settinBtn.js"></script>
+</html>
